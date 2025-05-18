@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+       <header>
+    <div class="logo">
+        <img src="path/to/logo.png" alt="Brand Logo">
+    </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="right-side">
+        <input type="text" placeholder="Search products..." name="text" class="search-bar">
+        <div class="cart-icon">
+            <span class="notification-badge">0</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkAT6IJ7eZlJx0X70xkwOZ7DHhpJ4XHzJRw&s" alt="Shopping Cart" style="height: 5vh;">
+        </div>
+        <div class="hamburger-menu">
+            <span>Home</span>
+            <span>Products</span>
+            <span>About</span>
+            <span>Contacts</span>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="hero-content">
+        <h3>Biggest Sale of the Year!</h3>
+        <h4>Don't miss out on our exclusive offers and new arrivals.</h4>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </div>
+</section>
+<section class="product-grid">
+    <div class="product-card">
+        <img src="path/to/product-image1.jpg" alt="Product 1">
+        <h5>Product 1</h5>
+        <p>$19.99</p>
+        <select class="product-vairation">
+          <option value="Small">Small</option>
+          <option value="Large">Large</option>
+        </select>
+        <input type="number" class="product-qty" value="1" min="1">
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="path/to/product-image2.jpg" alt="Product 2">
+        <h5>Product 2</h5>
+        <p>$29.99</p>
+          <select class="product-vairation">
+          <option value="Small">Small</option>
+          <option value="Large">Large</option>
+        </select>
+        <input type="number" class="product-qty" value="1" min="1">
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</section>
+<button onclick="switchtoAnotherIndex()">Next ></button>
+<script> 
+  function switchtoAnotherIndex(){
+    window.location.href = 'product.html';
+  }
+</script>
+<footer>
+  <p>&copy; My Website</p>
+</footer>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
